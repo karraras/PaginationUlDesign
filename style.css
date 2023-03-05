@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #00bcaa;
+}
+.parent {
+  width: 500px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 40px;
+  color: #00bcaa;
+  box-shadow: 0px 0px 15px 0px grey;
+}
+.parent > div {
+  cursor: pointer;
+}
+.parent .space {
+  cursor: context-menu;
+}
+.parent button {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+  color: #00bcaa;
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+.parent .numbers {
+  overflow: hidden;
+  display: flex;
+  width: 135px;
+  height: 40px;
+  position: relative;
+  align-items: center;
+}
+
+.parent .numbers > span {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parent .numbers > span:hover {
+  color: white;
+  background: #00bcaa;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parent .prev:hover,
+.parent .next:hover {
+  background: #00bcaa;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 15px;
+}
+.parent .before:hover,
+.parent .after:hover {
+  color: white;
+  background: #00bcaa;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parent .before,
+.parent .after {
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.parent .one {
+  position: absolute;
+  left: 0px;
+}
+.parent .two {
+  position: absolute;
+  left: 50px;
+}
+.parent .three {
+  position: absolute;
+  left: 100px;
+}
+.parent .four {
+  position: absolute;
+  left: 150px;
+}
+.parent .five {
+  position: absolute;
+  left: 200px;
+}
+.parent .six {
+  position: absolute;
+  left: 250px;
+}
+.parent .seven {
+  position: absolute;
+  left: 300px;
+}
+.parent .eight {
+  position: absolute;
+  left: 350px;
+}
+.parent .nine {
+  position: absolute;
+  left: 400px;
+}
+.parent .ten {
+  position: absolute;
+  left: 450px;
+}
+.parent .eleven {
+  position: absolute;
+  left: 500px;
+}
+.parent .twelve {
+  position: absolute;
+  left: 550px;
+}
+.parent .thirteen {
+  position: absolute;
+  left: 600px;
+}
+.parent .fourteen {
+  position: absolute;
+  left: 650px;
+}
+.parent .fiveteen {
+  position: absolute;
+  left: 700px;
+}
+.parent .sixteen {
+  position: absolute;
+  left: 750px;
+}
+.parent .seventeen {
+  position: absolute;
+  left: 800px;
+}
+.parent .eighteen {
+  position: absolute;
+  left: 850px;
+}
+.parent .nineteen {
+  position: absolute;
+  left: 900px;
+}
+.parent .twenty {
+  position: absolute;
+  left: 950px;
+}
+.parent span.foucs {
+  color: white;
+  background: #00bcaa;
+  padding: 5px;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* =============================== */
+
+/* ================ */
+.parent.twenty,
+.parent.after,
+.parent.one,
+.parent.before {
+  width: 400px;
+}
+/* ====== */
+.parent.one .numbers,
+.parent.before .numbers,
+.parent.twenty .numbers,
+.parent.after .numbers,
+.parent.nineteen .numbers,
+.parent.eighteen .numbers,
+.parent.three .numbers,
+.parent.two .numbers {
+  width: 185px;
+}
+/* ===== */
+.parent.twenty .next,
+.parent.twenty .after,
+.parent.after .after,
+.parent.twenty .AftSpace,
+.parent.after .AftSpace,
+.parent.nineteen .after,
+.parent.nineteen .AftSpace,
+.parent.eighteen .after,
+.parent.eighteen .AftSpace,
+.parent.three .before,
+.parent.three .preSpace,
+.parent.two .before,
+.parent.two .preSpace,
+.parent.one .prev,
+.parent.before .prev,
+.parent.one .preSpace,
+.parent.before .preSpace,
+.parent.one .before,
+.parent.before .before {
+  display: none;
+}
+/* ==================== */
+.parent.twenty .before,
+.parent.after .before,
+.parent.twenty .preSpace,
+.parent.after .preSpace,
+.parent.nineteen .before,
+.parent.nineteen .preSpace,
+.parent.eighteen .before,
+.parent.eighteen .preSpace,
+.parent.seventeen .before,
+.parent.seventeen .preSpace,
+.parent.seventeen .after,
+.parent.seventeen .AftSpace,
+.parent.sixteen .before,
+.parent.sixteen .preSpace,
+.parent.sixteen .after,
+.parent.sixteen .AftSpace,
+.parent.fiveteen .before,
+.parent.fiveteen .preSpace,
+.parent.fiveteen .after,
+.parent.fiveteen .AftSpace,
+.parent.fourteen .beffiveteen .parent.fourteen .preSpace,
+.parent.fourteen .after,
+.parent.fourteen .AftSpace,
+.parent.thirteen .beffourteen .parent.thirteen .preSpace,
+.parent.thirteen .after,
+.parent.thirteen .AftSpace,
+.parent.twelve .before,
+.parent.twelve .preSpthirteen .parent.twelve .after,
+.parent.twelve .AftSpace,
+.parent.eleven .before,
+.parent.eleven .preSpace,
+.parent.eleven .after,
+.parent.eleven .AftSpace,
+.parent.ten .before,
+.parent.ten .preSpace,
+.parent.ten .after,
+.parent.ten .AftSpace,
+.parent.nine .before,
+.parent.nine .preSpace,
+.parent.nine .after,
+.parent.nine .AftSpace,
+.parent.eight .befnine .parent.eight .preSpace,
+.parent.eight .after,
+.parent.eight .AftSpace,
+.parent.seven .before,
+.parent.seven .preSpace,
+.parent.seven .after,
+.parent.seven .AftSpace,
+.parent.six .before,
+.parent.six .preSpace,
+.parent.six .after,
+.parent.six .AftSpace,
+.parent.five .before,
+.parent.five .preSpace,
+.parent.five .after,
+.parent.five .AftSpace,
+.parent.four .before,
+.parent.four .preSpace,
+.parent.four .after,
+.parent.four .AftSpace,
+.parent.four .before,
+.parent.four .preSpace,
+.parent.four .after,
+.parent.four .AftSpace,
+.parent.three .after,
+.parent.three .AftSpace,
+.parent.two .after,
+.parent.two .AftSpace,
+.parent.one .after,
+.parent.before .after,
+.parent.one .aftSpace,
+.parent.before .aftSpace {
+  display: flex;
+}
+/* ================ */
+.parent.two .prev,
+.parent.three .prev,
+.parent.four .prev,
+.parent.five .prev,
+.parent.six .prev,
+.parent.seven .prev,
+.parent.eight .prev,
+.parent.nine .prev,
+.parent.ten .prev,
+.parent.eleven .prev,
+.parent.twelve .prev,
+.parent.thirteen .prev,
+.parent.fourteen .prev,
+.parent.fiveteen .prev,
+.parent.sixteen .prev,
+.parent.seventeen .prev,
+.parent.eighteen .prev,
+.parent.nineteen .prev,
+.parent.twenty .prev,
+.parent.after .prev,
+.parent.nineteen .next,
+.parent.eighteen .next,
+.parent.seventeen .next,
+.parent.sixteen .next,
+.parent.fiveteen .next,
+.parent.fourteen .next,
+.parent.thirteen .next,
+.parent.twelve .next,
+.parent.eleven .next,
+.parent.ten .next,
+.parent.nine .next,
+.parent.eight .next,
+.parent.seven .next,
+.parent.six .next,
+.parent.five .next,
+.parent.four .next,
+.parent.three .next,
+.parent.two .next,
+.parent.one .next,
+.parent.before .next {
+  display: block;
+}
